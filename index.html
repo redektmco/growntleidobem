@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lei do Bem para empresas com PD&amp;I | Grownt</title>
+  <meta name="description" content="Sua empresa já investe em PD&amp;I? A Lei do Bem pode reduzir o custo desse investimento. A Grownt avalia elegibilidade e potencial de incentivo em um diagnóstico sem custo.">
+  <meta name="theme-color" content="#F15F38">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <meta property="og:title" content="Lei do Bem para empresas com PD&amp;I | Grownt">
+  <meta property="og:description" content="Avalie a elegibilidade e o potencial de incentivo da sua empresa em um diagnóstico sem custo.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/pdi-equipe.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/hero-bg.webp">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <a class="skip" href="#diagnostico">Ir para o formulário de diagnóstico</a>
+
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Principal">
+      <a class="nav__logo" href="https://grownt.tech/" aria-label="Grownt, ir para o site">
+        <img src="assets/logo-grownt.png" alt="Grownt" width="124" height="38">
+      </a>
+      <ul class="nav__links">
+        <li><a href="#para-quem">Para quem é</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#resultados">Resultados</a></li>
+        <li><a href="#duvidas">Dúvidas</a></li>
+      </ul>
+      <a class="btn btn--primary btn--sm" href="#diagnostico" data-focus-form>Avaliar potencial</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__plate">
+        <div class="hero__copy">
+          <h1 id="hero-title" class="hero__title">Sua empresa já investe em PD&amp;I. A Lei do Bem pode reduzir o custo desse investimento.</h1>
+          <p class="hero__lead">A Grownt identifica e documenta os projetos de Pesquisa, Desenvolvimento e Inovação com potencial de enquadramento na Lei do Bem (Lei nº 11.196/2005), com rigor técnico e acompanhamento até a declaração ao MCTI.</p>
+          <ul class="reqs" aria-label="Para quem é">
+            <li>
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+              Lucro Real
+            </li>
+            <li>
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6M10 3v6.2L4.6 18.4A1.7 1.7 0 0 0 6 21h12a1.7 1.7 0 0 0 1.4-2.6L14 9.2V3"/><path d="M7.5 15h9"/></svg>
+              Atividades de PD&amp;I
+            </li>
+            <li>
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.4-3 8.2-7 9.5-4-1.3-7-5.1-7-9.5V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+              Regularidade fiscal
+            </li>
+          </ul>
+          <p class="hero__proof"><strong>17 anos</strong> em incentivos à inovação <span aria-hidden="true">·</span> <strong>+500</strong> empresas atendidas</p>
+        </div>
+
+        <div class="formcard" id="diagnostico" tabindex="-1">
+          <div class="formcard__inner" data-form-view>
+            <h2 class="formcard__title">Diagnóstico sem custo</h2>
+            <p class="formcard__sub">Avalie a elegibilidade e o potencial de incentivo da sua empresa com um especialista.</p>
+            <form class="form" id="lead-form" novalidate>
+              <div class="form__grid">
+                <div class="field">
+                  <label for="f-nome">Nome</label>
+                  <input id="f-nome" name="nome" type="text" autocomplete="name" required placeholder="Seu nome">
+                  <p class="field__err" id="e-nome" hidden></p>
+                </div>
+                <div class="field">
+                  <label for="f-empresa">Empresa</label>
+                  <input id="f-empresa" name="empresa" type="text" autocomplete="organization" required placeholder="Nome da empresa">
+                  <p class="field__err" id="e-empresa" hidden></p>
+                </div>
+                <div class="field field--full">
+                  <label for="f-email">E-mail corporativo</label>
+                  <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="voce@empresa.com.br">
+                  <p class="field__err" id="e-email" hidden></p>
+                </div>
+                <div class="field">
+                  <label for="f-cargo">Cargo</label>
+                  <input id="f-cargo" name="cargo" type="text" autocomplete="organization-title" required placeholder="Seu cargo">
+                  <p class="field__err" id="e-cargo" hidden></p>
+                </div>
+                <div class="field">
+                  <label for="f-regime">Regime tributário</label>
+                  <div class="select">
+                    <select id="f-regime" name="regime" required>
+                      <option value="" disabled selected>Selecione</option>
+                      <option>Lucro Real</option>
+                      <option>Lucro Presumido</option>
+                      <option>Simples Nacional</option>
+                      <option>Não sei informar</option>
+                    </select>
+                    <svg class="select__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+                  </div>
+                  <p class="field__err" id="e-regime" hidden></p>
+                </div>
+                <div class="field field--full">
+                  <label for="f-tel">Telefone <span class="opt">(opcional)</span></label>
+                  <input id="f-tel" name="telefone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(00) 00000-0000">
+                </div>
+              </div>
+              <p class="form__note" id="regime-note" hidden>A Lei do Bem é exclusiva do Lucro Real. Envie mesmo assim: o especialista indica outras oportunidades da Grownt para o seu regime.</p>
+              <!-- campos ocultos de origem (preenchidos pelo script) -->
+              <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_term"><input type="hidden" name="utm_content"><input type="hidden" name="gclid"><input type="hidden" name="pagina">
+              <div class="hp" aria-hidden="true"><label>Não preencha <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+              <button class="btn btn--primary btn--block" type="submit">
+                <span class="btn__label">Avaliar potencial de incentivo</span>
+                <svg class="ico ico--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </button>
+              <p class="form__micro">Um especialista da Grownt entra em contato para agendar o diagnóstico. Ao enviar, você concorda com a <a href="https://grownt.tech/politica-de-privacidade" target="_blank" rel="noopener">Política de Privacidade</a>.</p>
+              <p class="form__status" role="alert" hidden></p>
+            </form>
+          </div>
+          <div class="formcard__done" data-form-done hidden>
+            <svg class="mark mark--done" viewBox="0 0 100 100" aria-hidden="true"><path class="mark__ring" d="M58.3 19.8A35 35 0 1 1 16.1 51"/><circle cx="27" cy="27" r="8"/><circle cx="44" cy="14" r="8"/></svg>
+            <h2 class="formcard__title" tabindex="-1">Recebemos seus dados</h2>
+            <p class="formcard__sub">Um especialista da Grownt vai entrar em contato pelo e-mail informado para agendar o diagnóstico sem custo.</p>
+            <p class="formcard__sub">Enquanto isso, conheça os <a href="https://grownt.tech/cases-de-sucesso" target="_blank" rel="noopener">cases de sucesso</a> da Grownt.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECONHECIMENTO: DOIS LEITORES -->
+    <section class="sec readers" id="para-quem" aria-labelledby="readers-title">
+      <div class="wrap">
+        <div class="readers__head">
+          <h2 id="readers-title" class="h2">O que sua equipe desenvolve pode ter potencial de incentivo fiscal.</h2>
+          <p class="lead">A Lei do Bem não se limita a grandes laboratórios. Veja a resposta para a sua área:</p>
+        </div>
+
+        <div class="seg" role="tablist" aria-label="Escolha sua área">
+          <span class="seg__thumb" aria-hidden="true"></span>
+          <button class="seg__btn" role="tab" id="tab-pdi" aria-controls="panel-pdi" aria-selected="true">Sou de PD&amp;I</button>
+          <button class="seg__btn" role="tab" id="tab-fiscal" aria-controls="panel-fiscal" aria-selected="false" tabindex="-1">Sou do Fiscal ou Financeiro</button>
+        </div>
+
+        <div class="panels">
+          <article class="panel is-active" role="tabpanel" id="panel-pdi" aria-labelledby="tab-pdi" tabindex="0">
+            <figure class="panel__media">
+              <img src="assets/pdi-equipe.webp" alt="Equipe de desenvolvimento trabalhando em notebooks, vista de cima" width="1400" height="934" loading="lazy">
+            </figure>
+            <div class="panel__body">
+              <h3 class="h3">Quais projetos contam?</h3>
+              <ul class="points">
+                <li>
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/></svg>
+                  <div><strong>Produtos e processos</strong><span>Desenvolvimento ou aprimoramento tecnológico de produtos e processos.</span></div>
+                </li>
+                <li>
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 4l-4 16"/></svg>
+                  <div><strong>Sistemas e software</strong><span>Criação de sistemas e softwares com incertezas técnicas relevantes.</span></div>
+                </li>
+                <li>
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6M10 3v6.2L4.6 18.4A1.7 1.7 0 0 0 6 21h12a1.7 1.7 0 0 0 1.4-2.6L14 9.2V3"/><path d="M7.5 15h9"/></svg>
+                  <div><strong>Protótipos e testes</strong><span>Experimentações para validar soluções tecnológicas.</span></div>
+                </li>
+              </ul>
+              <p class="panel__note">Sua equipe valida as atividades. A Grownt organiza a comprovação técnica.</p>
+            </div>
+          </article>
+
+          <article class="panel" role="tabpanel" id="panel-fiscal" aria-labelledby="tab-fiscal" tabindex="0" hidden>
+            <figure class="panel__media">
+              <img src="assets/fiscal-analise.webp" alt="Profissional analisando indicadores financeiros no notebook" width="1400" height="933" loading="lazy">
+            </figure>
+            <div class="panel__body">
+              <h3 class="h3">Qual é o impacto, e com que segurança?</h3>
+              <ul class="points">
+                <li>
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 5L5 19"/><circle cx="7" cy="7" r="2.5"/><circle cx="17" cy="17" r="2.5"/></svg>
+                  <div><strong>Exclusão adicional de 60% a 80%</strong><span>dos dispêndios com PD&amp;I na base de cálculo do IRPJ e da CSLL.</span></div>
+                </li>
+                <li>
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+                  <div><strong>Sem aprovação prévia</strong><span>Os dispêndios do ano são declarados no FORMP&amp;D ao MCTI até 31 de julho do ano seguinte.</span></div>
+                </li>
+                <li>
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>
+                  <div><strong>Rastreabilidade</strong><span>Pessoas, horas, dispêndios e evidências técnicas documentados para eventuais questionamentos.</span></div>
+                </li>
+              </ul>
+              <p class="panel__note">O aproveitamento depende do lucro fiscal e da regularidade de cada exercício.</p>
+            </div>
+          </article>
+        </div>
+        <p class="fine">O enquadramento depende da natureza da atividade, do risco tecnológico e da comprovação dos dispêndios.</p>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="sec process" id="como-funciona" aria-labelledby="process-title">
+      <div class="wrap process__grid">
+        <div class="process__intro">
+          <h2 id="process-title" class="h2">Inovar é parte do trabalho da sua equipe. Comprovar o investimento é parte do nosso.</h2>
+          <p class="lead">Engenheiros, cientistas e especialistas tributários da Grownt trabalham juntos para identificar oportunidades, organizar evidências e acompanhar as exigências da Lei do Bem, sem desviar sua equipe do desenvolvimento.</p>
+        </div>
+        <figure class="process__media">
+          <img src="assets/grownt-time.webp" alt="Equipe revisando materiais juntos sobre uma mesa de trabalho" width="1400" height="933" loading="lazy">
+        </figure>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__n" aria-hidden="true">1</span>
+            <h3 class="step__t">Diagnóstico</h3>
+            <p>Avaliamos o perfil fiscal e os projetos com potencial.</p>
+          </li>
+          <li class="step">
+            <span class="step__n" aria-hidden="true">2</span>
+            <h3 class="step__t">Mapeamento e documentação</h3>
+            <p>Organizamos atividades, pessoas, dispêndios e evidências técnicas.</p>
+          </li>
+          <li class="step">
+            <span class="step__n" aria-hidden="true">3</span>
+            <h3 class="step__t">Acompanhamento</h3>
+            <p>Preparamos o FORMP&amp;D e apoiamos as obrigações de reporte, conforme a legislação.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROVA -->
+    <section class="sec proof" id="resultados" aria-labelledby="proof-title">
+      <div class="proof__plate">
+        <svg class="mark mark--proof" viewBox="0 0 100 100" aria-hidden="true"><path class="mark__ring" d="M58.3 19.8A35 35 0 1 1 16.1 51"/><circle cx="27" cy="27" r="8"/><circle cx="44" cy="14" r="8"/></svg>
+        <div class="proof__inner">
+          <h2 id="proof-title" class="h2 h2--light">Experiência técnica para decisões que precisam de confiança.</h2>
+          <p class="proof__statement">Há <em>17 anos</em> especializada em incentivos à inovação, com <em>+500 empresas</em> atendidas e <em>98,2%</em> de índice histórico de aprovação nos pleitos submetidos pela Grownt.</p>
+
+          <ul class="cases" aria-label="Cases de sucesso">
+            <li class="case">
+              <span class="case__co">Melhoramentos</span>
+              <span class="case__v">R$ 39,6 mi</span>
+              <span class="case__d">captados com Lei do Bem e Finep</span>
+            </li>
+            <li class="case">
+              <span class="case__co">Sabesp</span>
+              <span class="case__v">R$ 17 mi</span>
+              <span class="case__d">em benefício fiscal potencial</span>
+            </li>
+            <li class="case">
+              <span class="case__co">IBMP</span>
+              <span class="case__v">R$ 10 mi+</span>
+              <span class="case__d">em benefício fiscal obtido</span>
+            </li>
+            <li class="case">
+              <span class="case__co">Loccus</span>
+              <span class="case__v">R$ 705 mil</span>
+              <span class="case__d">em benefício fiscal no 1º ciclo</span>
+            </li>
+          </ul>
+
+          <div class="proof__foot">
+            <a class="link link--light" href="https://grownt.tech/cases-de-sucesso" target="_blank" rel="noopener">Ver os cases completos <svg class="ico ico--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <div class="seals">
+              <img src="assets/selo-iso-27001.webp" alt="Certificação ISO/IEC 27001, segurança da informação" width="300" height="405" loading="lazy">
+              <img src="assets/selo-iso-56001.webp" alt="Certificação ISO 56001, gestão da inovação" width="300" height="410" loading="lazy">
+              <span>Certificada ISO/IEC 27001 e ISO 56001</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="sec faq" id="duvidas" aria-labelledby="faq-title">
+      <div class="wrap faq__grid">
+        <h2 id="faq-title" class="h2">Dúvidas antes do diagnóstico</h2>
+        <div class="faq__list">
+          <details class="qa">
+            <summary>Minha empresa precisa desenvolver algo inédito no mercado?<span class="qa__i" aria-hidden="true"></span></summary>
+            <p>Não necessariamente. Melhorias tecnológicas podem se enquadrar, desde que cumpram os critérios legais e envolvam desafios técnicos comprováveis.</p>
+          </details>
+          <details class="qa">
+            <summary>Quais empresas podem utilizar os incentivos?<span class="qa__i" aria-hidden="true"></span></summary>
+            <p>A Lei do Bem é voltada a empresas que tributam pelo Lucro Real, realizam PD&amp;I elegível e atendem às exigências fiscais aplicáveis, de qualquer setor ou porte.</p>
+          </details>
+          <details class="qa">
+            <summary>Projetos de software e melhorias de processo contam?<span class="qa__i" aria-hidden="true"></span></summary>
+            <p>Podem contar. A elegibilidade depende do conteúdo tecnológico, do esforço de desenvolvimento e das evidências do projeto, e não apenas da categoria.</p>
+          </details>
+          <details class="qa">
+            <summary>Minha equipe terá muito trabalho adicional?<span class="qa__i" aria-hidden="true"></span></summary>
+            <p>A Grownt conduz o mapeamento e a documentação. A equipe colabora validando atividades e informações, sem sair da rotina de desenvolvimento.</p>
+          </details>
+          <details class="qa">
+            <summary>Como saber quanto a empresa pode aproveitar?<span class="qa__i" aria-hidden="true"></span></summary>
+            <p>O potencial é apurado a partir dos projetos elegíveis, dos dispêndios documentados e da situação fiscal da empresa. Não existe um valor universal: é isso que o diagnóstico estima.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FECHAMENTO -->
+    <section class="sec close" aria-labelledby="close-title">
+      <div class="close__plate">
+        <div class="close__copy">
+          <h2 id="close-title" class="h2 h2--light">Sua empresa pode se beneficiar da Lei do Bem?</h2>
+          <p class="close__lead">O diagnóstico sem custo verifica o enquadramento dos seus projetos e estima o potencial de incentivo. O aproveitamento de IRPJ e CSLL depende das condições fiscais de cada exercício.</p>
+          <a class="btn btn--light" href="#diagnostico" data-focus-form>
+            <span class="btn__label">Avaliar potencial de incentivo</span>
+            <svg class="ico ico--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <ul class="checklist" aria-label="Requisitos da Lei do Bem">
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Tributação pelo Lucro Real</li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Lucro fiscal no período</li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Regularidade fiscal (CND ou CPD-EN)</li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Atividades de PD&amp;I com risco tecnológico</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__row">
+      <img src="assets/logo-grownt.png" alt="Grownt" width="104" height="32" loading="lazy">
+      <p>Ecossistema de soluções para empresas que investem em inovação.</p>
+      <nav class="foot__links" aria-label="Institucional">
+        <a href="https://grownt.tech/" target="_blank" rel="noopener">grownt.tech</a>
+        <a href="https://grownt.tech/politica-de-privacidade" target="_blank" rel="noopener">Política de Privacidade</a>
+      </nav>
+      <p class="foot__copy">© 2026 Grownt. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <div class="dock" data-dock aria-hidden="true">
+    <a class="btn btn--primary btn--block" href="#diagnostico" data-focus-form tabindex="-1">
+      <span class="btn__label">Avaliar potencial de incentivo</span>
+      <svg class="ico ico--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+
+  <script src="assets/form-config.js"></script>
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
